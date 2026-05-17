@@ -1,8 +1,11 @@
 workflows:
   android-workflow:
     name: Android Build
-    
-    instance_type: linux
+
     scripts:
       - pip install --upgrade pip
-      - pip
+      - pip install buildozer cython
+      - buildozer android debug
+
+    artifacts:
+      - bin/*.apk
