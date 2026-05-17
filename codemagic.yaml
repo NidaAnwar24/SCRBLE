@@ -1,4 +1,3 @@
-```yaml
 workflows:
   android-workflow:
     name: Android Build
@@ -10,4 +9,3 @@ workflows:
 
     artifacts:
       - bin/*.apk
-```
