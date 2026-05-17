@@ -1,9 +1,8 @@
 workflows:
   android-workflow:
     name: Android Build
-
-    instance_type: linux_x2
-
+    
+    instance_type: linux
     scripts:
       - pip install --upgrade pip
       - pip
