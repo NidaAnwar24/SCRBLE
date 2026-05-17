@@ -1,3 +1,4 @@
+```ini
 [app]
 
 # App identity
@@ -8,8 +9,8 @@ version = 1.0
 
 # Source
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,gz
-source.include_patterns = data/*.py,game/*.py,screens/*.py
+source.include_exts = py,png,jpg,jpeg,kv,atlas,txt,gz
+source.include_patterns = data/*.py,data/*.gz,game/*.py,screens/*.py
 
 # Python requirements
 requirements = python3,kivy==2.3.0
@@ -23,6 +24,10 @@ android.api = 33
 android.minapi = 26
 android.ndk = 25b
 android.archs = arm64-v8a, armeabi-v7a
+android.accept_sdk_license = True
+
+# Build mode
+fullscreen = 0
 
 # iOS
 # ios.kivy_ios_url = https://github.com/kivy/kivy-ios
@@ -30,3 +35,4 @@ android.archs = arm64-v8a, armeabi-v7a
 [buildozer]
 log_level = 2
 warn_on_root = 1
+```
