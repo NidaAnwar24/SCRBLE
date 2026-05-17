@@ -1,15 +1,9 @@
 workflows:
   android-workflow:
     name: Android Build
-    max_build_duration: 120
 
-    environment:
-      python: 3.10
+    instance_type: linux_x2
 
     scripts:
       - pip install --upgrade pip
-      - pip install buildozer cython
-      - buildozer android debug
-
-    artifacts:
-      - bin/*.apk
+      - pip
