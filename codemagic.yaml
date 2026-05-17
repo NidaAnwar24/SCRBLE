@@ -3,6 +3,7 @@ workflows:
     name: Android Build
 
     scripts:
+      - yes | sdkmanager --licenses
       - pip install --upgrade pip
       - pip install buildozer cython
       - buildozer android debug
