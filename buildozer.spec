@@ -1,4 +1,3 @@
-```ini
 [app]
 
 # App identity
